@@ -6,11 +6,11 @@ const Header = () => {
     <div className='header-container'>
         <div className='header'>
             <div className='header-logo'>
-                Xpensr <i class="fi fi-rr-credit-card"></i>
+                Xpensr <i className="fi fi-rr-credit-card"></i>
             </div>
             <div className='header-button'>
                 <a href='https://github.com/skroll13/react-project-three' target="_blank" rel="noopener noreferrer">
-                  <i class="devicon-github-original"></i>Star
+                  <i className="devicon-github-original"></i>Star
                 </a>
             </div>
         </div>
