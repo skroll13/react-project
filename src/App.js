@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from "./pages/home"; 
 import Header from './components/header/index'
-import AddExpense from './pages/add-expense';
+import AddExpense from './pages/add-expense/index'
 
 function App() {
   return (
