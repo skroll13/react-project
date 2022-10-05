@@ -8,7 +8,7 @@ export const categories = [
     {
       id: 2,
       title: "Healthcare",
-      icon: require("../../assets/images/healthcare.png"),
+      icon: require("../../assets/images/doctor.png"),
       color: "#FF768A",
     },
     {

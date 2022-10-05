@@ -1,23 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from './card';
 import './expense-list.css'
+import { useSelector } from 'react-redux'
 
 const ExpenseList = () => {
-     const list=[
-        {
-        title: "made a purchase",
-        logo: "logo here",
-        createdAt: Date.now(),
-        amount: 324,
-     },
-        {
-        title: "made a purchase",
-        logo: "logo here",
-        createdAt: Date.now(),
-        amount: 324,
-     },
-    ]
-  return <div> {list.length ? list.map((item) => <Card item={item} />) : null} </div>;
+     const {expenseList: list, query} = useSelector(state => state.expenses);
+     const filteredList = list.filter((item) => item.title.includes(query))
+  return <div className='expense-list'>  
+  {filteredList.length ? filteredList.map((item) => (
+  <Card item = {item} />
+  )) : <div className='empty-state'>
+   <img src={require('../../assets/images/empty.png').default} alt='Empty List' className='empty image' />
+   <label> Your list is Empty</label>
+  </div>}
+  </div>;
 }
 
 export default ExpenseList
