@@ -78,6 +78,11 @@ min-height: 60vh;
     margin-right: 20px;
 }
 
+img{
+    height: 32px;
+
+}
+
 .form-add-button{
     display: flex;
     justify-content: flex-end;

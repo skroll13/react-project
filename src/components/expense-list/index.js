@@ -10,7 +10,7 @@ const ExpenseList = () => {
   {filteredList.length ? filteredList.map((item) => (
   <Card item = {item} />
   )) : <div className='empty-state'>
-   <img src={require('../../assets/images/empty.png').default} alt='Empty List' className='empty image' />
+   <img src={require('../../assets/images/empty.png')} alt='Empty List' className='empty image' />
    <label> Your list is Empty</label>
   </div>}
   </div>;
